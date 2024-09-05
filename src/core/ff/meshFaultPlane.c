@@ -148,7 +148,8 @@ int core_ff_meshFaultPlane(const double ev_lat,
     // Estimate the fault size
     area = pow(10.0, -3.49+0.91*M); // Fault area (Dreger and Kaverina, 2000)
     len  = pow(10.0, -2.44+0.59*M); // Fault length (Dreger and Kaverina, 2000)
-    wid  = area/len;                // Fault width is area divided by length
+    wid  = pow(10.0, -1.01+0.0.32*M); // Fault Width (Wells and Copperstmith, 1994)
+    //wid  = area/len;                // Fault width is area divided by length
     // Add a safety factor to encapsulate entire rupture
     len = len + fact_len*len;
     wid = wid + fact_wid*wid;
