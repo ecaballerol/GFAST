@@ -124,7 +124,7 @@ int core_ff_meshFaultPlane(const double ev_lat,
     {
         fact_len = flen_pct/100.0;
     }
-    fact_wid = 0.1;
+    fact_wid = 0.25;
     if (fwid_pct < 0.0)
     {
         if (verbose > 0)
